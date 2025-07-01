@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Explore the World - Travel Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+      color: #333;
+    }
+
+    header {
+      background-color: #2196f3;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #1976d2;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+
+    .destination {
+      background-color: white;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .destination img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2196f3;
+      color: white;
+      margin-top: 40px;
+    }
+
+    .explore-btn {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .explore-btn:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Explore the World</h1>
+    <p>Your guide to beautiful destinations</p>
+  </header>
+
+  <nav>
+    <a href="#paris">Paris</a>
+    <a href="#bali">Bali</a>
+    <a href="#tokyo">Tokyo</a>
+  </nav>
+
+  <main>
+    <section class="destination" id="paris">
+      <h2>Paris, France</h2>
+      <img src="https://source.unsplash.com/800x400/?paris,eiffel-tower" alt="Paris">
+      <p>Experience the City of Lights with its iconic landmarks, world-class museums, and delicious cuisine.</p>
+      <button class="explore-btn" onclick="showMessage('Paris')">Explore Paris</button>
+    </section>
+
+    <section class="destination" id="bali">
+      <h2>Bali, Indonesia</h2>
+      <img src="https://source.unsplash.com/800x400/?bali,beach" alt="Bali">
+      <p>Relax on stunning beaches, explore lush jungles, and discover the rich culture of Bali.</p>
+      <button class="explore-btn" onclick="showMessage('Bali')">Explore Bali</button>
+    </section>
+
+    <section class="destination" id="tokyo">
+      <h2>Tokyo, Japan</h2>
+      <img src="https://source.unsplash.com/800x400/?tokyo,japan" alt="Tokyo">
+      <p>Visit the vibrant metropolis of Tokyo, where ancient traditions meet modern innovation.</p>
+      <button class="explore-btn" onclick="showMessage('Tokyo')">Explore Tokyo</button>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Explore the World. All rights reserved.
+  </footer>
+
+  <script>
+    function showMessage(destination) {
+      alert("Thanks for exploring " + destination + "!");
+    }
+  </script>
+</body>
+</html>
